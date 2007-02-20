@@ -1,0 +1,35 @@
+--- content, html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_EN">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Bip irc proxy. The home page." />
+    <meta name="keywords" content="bip,irc,proxy" />
+    <link rel="stylesheet" type="text/css" href="{relocatable: default.css}" />
+    <title>Bip: {title:}</title>
+  </head>
+
+  <body>
+    <div id="main">
+
+      <div id="header">
+        <h1>Bip: {title:}</h1>
+      </div>
+
+      <div id="menu">
+        {menu: horizontal}
+      </div>
+
+      <div id="content">
+        {block:}
+      </div>
+
+      <div id="footer">
+        <span class="left"><a href="http://developer.berlios.de/projects/bip">Berlios project page</a></span>
+        <span class="right">© 2004-2006 Loïc Gomez and Arnaud Cornet.</span>
+      </div>
+
+    </div>
+  </body>
+</html>

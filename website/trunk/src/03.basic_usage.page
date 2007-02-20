@@ -1,0 +1,13 @@
+---
+title: Basic use
+inMenu: true
+directoryName: bip
+---
+h2. Basic usage
+
+
+* Copy sample bip.conf file found in tarball in ~/.bip/bip.conf
+* Edit according to your needs
+* Setup you favorite IRC client to connect to bip, and setup a IRC password according to the format "bip_username:bip_password:connection_id"
+
+Use a single bip session for multiple irc connection. Each bip user can have multiple irc networks to connect to, the connection_id identifies a connection for a user. For example if a user connects on OFTC and efnet, he would configure his client to connect to two servers, all with the same host (the one on which bip is running), and he would set a diffrent irc password for each of the networks. ie "user:pass:OFTC" and "user:pass:efnet".
