@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Bip irc proxy. The home page." />
-    <meta name="keywords" content="bip,irc,proxy" />
+    <meta name="keywords" content="bip,irc,proxy,{title:}" />
     <link rel="stylesheet" type="text/css" href="{relocatable: default.css}" />
     <title>Bip: {title:}</title>
   </head>
@@ -14,7 +14,7 @@
     <div id="main">
 
       <div id="header">
-        <h1>Bip: {title:}</h1>
+        <img src="bipnomarginlittle.png" alt="The ass-kicking bip logo" />
       </div>
 
       <div id="menu">
