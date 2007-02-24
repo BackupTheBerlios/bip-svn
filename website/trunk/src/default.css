@@ -151,6 +151,10 @@ div#menu {
   background-color: #eee;
 }
 
+div#menu span {
+  border-left: solid darkred 2px;
+}
+
 div#menu a {
   padding: 0px 0px 0px 3px;
   color: #505050; 
