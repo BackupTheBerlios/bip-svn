@@ -152,6 +152,7 @@ div#menu {
 }
 
 div#menu span {
+  padding: 0px 0px 0px 3px;
   border-left: solid darkred 2px;
 }
 
