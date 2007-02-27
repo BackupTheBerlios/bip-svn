@@ -1,0 +1,90 @@
+2007-02-17  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* src/lex.l: Uniformize backlog options with backlog_ prefix.
+	* bip.conf.1: Update bip.conf doc.
+
+2007-01-01  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* src/connection.c: Fix fd leak.
+	* src/irc.c: Delay reconnections.
+
+2007-02-26  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* *: Merge a patch from Trou for .oidentd.conf not to be overwritten.
+	* *: Fix loglevels.
+
+2007-01-26  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* Infamous nick bug: This changes pretty much everything and might fix
+	the damn thing. Needs testing.
+
+2007-01-12  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* src/irc.c: /msg to -bip is now equivalent to /quote bip.
+
+2007-01-07  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* *: Backlog fixes.
+	* src/irc.c: WHO reply / banlist redirection to the asking client now
+	more robust.
+	* src/log.c: backlogging display bug.
+
+2006-09-25  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* *: Debug no_client_away_msg.
+
+2006-09-23  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* src/irc.c: Untested oidentd IPV6 support.
+
+2006-09-18  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* src/bip.c: umask for better permissions when using in system mode.
+	* src/irc.c: added no_client_away_msg configuration directive and
+	code as well as support for multiple on_connect_send.
+
+2006-07-02  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* src/irc.c: added /bip subcommands:
+	ON_CONNECT_SEND [:string]
+	AWAY_NICK [nick]
+	FOLLOW_NICK (true|false)
+	IGNORE_FIRST_NICK (true|false)
+	* src/irc.c: fix null pointer deference on wierd irc server.
+	* bip: release 0.5.3
+
+2006-06-08  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* samples/bip.conf: change default nick in sample file
+	* src/irc.c: fix nick desync between client and server
+
+2006-03-08  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* bip: release 0.5.2
+
+2006-03-07  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* src/irc.c: count one argument on +e when parsing modes
+
+2006-02-21  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+	* who: Re-organized and fixed fatal.
+
+2006-02-05  Arnaud Cornet <arnaud.cornet@gmail.com>
+	* who: merged patch from lappz (Peter Zijlstra) to avoid polluting who
+	replies to all clients when a client does /who.
+
+2006-01-29  Arnaud Cornet <arnaud.cornet@gmail.com>
+
+        Now use automake 1.9
+	fix misleading error message on wrong password
+	merged man pages
+	* samples: fixed typo in sample
+	* SSL certs: Allows to trust when not connected
+	Typos in error messages.
+	Relicensing to proper GPL with exception for OpenSSL
+
+2005-04-21  Arnaud Cornet <nohar@t1r.net>
+
+        * src: Now use autoconf/automake
+	bip is now public :)
