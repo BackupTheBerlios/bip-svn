@@ -1,0 +1,9 @@
+# TODO: me
+
+    /BIP (RELOAD|LIST|JUMP|BLRESET|HELP|TRUST)
+    /BIP FOLLOW_NICK|IGNORE_FIRST_NICK TRUE|FALSE
+    /BIP ON_CONNECT_SEND <str> # Adds a string to send on connect
+    /BIP ON_CONNECT_SEND # Clears on_connect_send
+    /BIP AWAY_NICK <nick> # Set away nick
+    /BIP AWAY_NICK # clear away nick
+

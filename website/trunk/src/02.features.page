@@ -9,36 +9,33 @@ h2. Features
     * proxy multiple users and IRC connections (multiuser, multiserver)
     * automatically join channels upon connection
     * backlog events (messages, nick changes, quits, ...) upon client connection (optional)
-    * timestamp backlogs
+    * timestamp backlogs (optional)
     * limit backlog to N lines per channel or backlog since since last client-quit or client-message
-    * logging support - can be disabled for low disk space servers/accounts
+    * logging support - can be disabled for low disk space servers/accounts. It can even be done in memory if you want backlog without file on disk (think wrt64g and the like)
     * configurable logfile format using bip user, bip network name, channel name, and month/day (rotate logs)
     * complete text file configuration (+vim syntax file)
     * multiple IRC clients can access to the same IRC connection (same network, same nick) transparently
     * SSL support on the port Bip listens to (client SSL)
     * check for stoned connections and try to reconnect to another server on network (irc ping)
     * oidentd support for multiple identities (oidentd spoofing)
-    * standalone server (only one process)
-    * very low memory usage
-    * Per user stuff
-    * encrypted (hashed) password-based authentication
-    * use multiplexed password to determine bip user, network and password (easier irssi use)
-    * default nickname, username and realname
-    * SSL certificate check against a per user list of certificates, ca (optional)
-    * Per connection stuff
-    * optional away nick (when no client is attached)
+    * bip runs in one process and tries hard not to hog your CPU for no reason
+    * low memory usage
+
+h2. Per user stuff
+
+    * hashed password-based authentication
+    * SSL certificate check against a per user list of certificates, ca (optional), allows ssh-like security scheme through SSL certificates
+
+h2. Per connection stuff
+
+    * optional away nick when no client is attached
+    * optional away status when no client is attached
     * send raw IRC commands upon connection to the network
-    * can ignore the nick sent by the client connecting to Bip (optional)
     * follow (or not) nickname changes to restore the last nick upon reconnection after server disconnection
-    * server password support
-    * channel list to autojoin upon connection (password protected channel support)
-    * bind to specific local port/IP address
-    * Network stuff
+    * stays in youre joined channels
+
+h2. Network stuff
+
     * SSL support for server connections
     * multiple IP/hostnames, DNS round robin support
-    * IRC interface
-    * /QUOTE BIP JUMP to disconnect and try the next server
-    * /QUOTE BIP BLRESET to reset backlog (like when a client quits)
-    * /QUOTE BIP LIST to show a quick usr/nets config summary
-    * /QUOTE BIP RELOAD to reload configuration file and apply changes
-
+    * IRC command interface, allowing to control or push some runtime configuration uptions.

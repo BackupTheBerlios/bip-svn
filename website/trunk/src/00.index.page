@@ -11,6 +11,12 @@ unique format and on a unique computer) whatever your client is, when you
 connect from multiple workstations, or when you simply want to have a playback
 of what was said while you were away.
 
+h2. News (or not)
+
+2007-02-27: bip 0.6.0 released. See the downloads page.
+Includes more commands, more options, more fixes.
+
 Bip is developed by Arnaud Cornet and Loïc Gomez and is distributed under the
 GNU Public License Version 2 (see the AUTHORS file for a list of contributors).
+
 BIP IRC channel is on OFTC : irc://irc.oftc.net/#bip
