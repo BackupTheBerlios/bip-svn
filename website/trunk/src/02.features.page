@@ -9,14 +9,13 @@ h2. Features
     * proxy multiple users and IRC connections (multiuser, multiserver)
     * automatically join channels upon connection
     * backlog events (messages, nick changes, quits, ...) upon client connection (optional)
-    * timestamp backlogs (optional)
+    * optional timestamp backlogs
     * limit backlog to N lines per channel or backlog since since last client-quit or client-message
-    * logging support - can be disabled for low disk space servers/accounts. It can even be done in memory if you want backlog without file on disk (think wrt64g and the like)
+    * logging support - can be disabled for low disk space servers/accounts. It can even be done in memory if you want backlog without file on disk (think wrt54g and the like)
     * configurable logfile format using bip user, bip network name, channel name, and month/day (rotate logs)
     * complete text file configuration (+vim syntax file)
     * multiple IRC clients can access to the same IRC connection (same network, same nick) transparently
     * SSL support on the port Bip listens to (client SSL)
-    * check for stoned connections and try to reconnect to another server on network (irc ping)
     * oidentd support for multiple identities (oidentd spoofing)
     * bip runs in one process and tries hard not to hog your CPU for no reason
     * low memory usage
@@ -28,14 +27,14 @@ h2. Per user stuff
 
 h2. Per connection stuff
 
+    * stays in your joined channels
     * optional away nick when no client is attached
     * optional away status when no client is attached
     * send raw IRC commands upon connection to the network
-    * follow (or not) nickname changes to restore the last nick upon reconnection after server disconnection
-    * stays in youre joined channels
+    * configurable management of your nick when there's a disconnection to the server
 
 h2. Network stuff
 
     * SSL support for server connections
     * multiple IP/hostnames, DNS round robin support
-    * IRC command interface, allowing to control or push some runtime configuration uptions.
+    * IRC command interface, allowing to control or push some runtime configuration options.
